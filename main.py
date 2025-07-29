@@ -1,22 +1,22 @@
-# This script demonstrates a simple division operation with proper error handling.
+# This script demonstrates a simple multiplication operation with proper error handling.
 
 import logging
 
 from typing import Optional
 
-def divide(a: int, b: int) -> Optional[float]:
+def multiply(a: int, b: int) -> Optional[float]:
     """
-    Divide two numbers represented as integers and handle errors gracefully.
+    Multiply two numbers represented as integers and handle errors gracefully.
 
     Args:
-        a (int): The numerator.
-        b (int): The denominator.
+        a (int): The first number.
+        b (int): The second number.
 
     Returns:
-        Optional[float]: The result of the division if successful, None otherwise.
+        Optional[float]: The result of the multiplication if successful, None otherwise.
     """
     try:
-        return a / b
+        return a * b
     except ZeroDivisionError:
         logging.error('Error: Division by zero is not allowed.')
         return None
@@ -24,9 +24,9 @@ def divide(a: int, b: int) -> Optional[float]:
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     
-    # Test division by zero
-    result = divide(22, 0)
+    # Test multiplication
+    result = multiply(10, 5)
     if result is not None:
-        print(result)
+        print(f"{result:.2f}")
     else:
-        print('Division could not be performed.')
+        print('Multiplication could not be performed.')
