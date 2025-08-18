@@ -14,7 +14,7 @@ def multiply(a: int, b: int) -> Optional[float]:
     Returns:
         Optional[float]: The result of the multiplication.
     """
-    return a * b
+    return a / b
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
