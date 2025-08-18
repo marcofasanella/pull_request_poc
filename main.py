@@ -1,25 +1,20 @@
-# This script demonstrates a simple multiplication operation with proper error handling.
+# This script demonstrates a simple multiplication operation.
 
 import logging
-
 from typing import Optional
 
 def multiply(a: int, b: int) -> Optional[float]:
     """
-    Multiply two numbers represented as integers and handle errors gracefully.
+    Multiply two numbers represented as integers.
 
     Args:
         a (int): The first number.
         b (int): The second number.
 
     Returns:
-        Optional[float]: The result of the multiplication if successful, None otherwise.
+        Optional[float]: The result of the multiplication.
     """
-    try:
-        return a * b
-    except ZeroDivisionError:
-        logging.error('Error: Division by zero is not allowed.')
-        return None
+    return a * b
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
