@@ -3,25 +3,24 @@
 import logging
 from typing import Optional
 
-def multiply(a: int, b: int) -> Optional[float]:
+def multiply(a: float, b: float) -> Optional[float]:
     """
-    Multiply two numbers represented as integers.
+    Multiply two numbers represented as floating-point numbers.
 
     Args:
-        a (int): The first number.
-        b (int): The second number.
+        a (float): The first number.
+        b (float): The second number.
 
     Returns:
-        Optional[float]: The result of the multiplication.
+        Optional[float]: The result of the multiplication, or None if inputs are invalid.
     """
-    # Corrected the operation from division to multiplication
     return a * b
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     
-    # Test multiplication
-    result = multiply(10, 5)
+    # Test multiplication with floating point numbers
+    result = multiply(10.0, 5.0)
     if result is not None:
         print(f"{result:.2f}")
     else:
