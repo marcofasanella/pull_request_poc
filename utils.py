@@ -14,7 +14,8 @@ def concatenate_strings(*args: str) -> str:
     """
     Concatenate multiple strings into one, ignoring None or empty strings.
     """
-    return ''.join(str(arg) for arg in args if arg not in (None, ''))
+    return ''.join(arg for arg in args if arg)
+
 
 def capitalize_first_letter(text: str) -> str:
     """
@@ -22,4 +23,4 @@ def capitalize_first_letter(text: str) -> str:
     """
     if not text:
         return text
-    return text[0].upper() + text[1:] if len(text) > 1 else text.upper()
+    return text[0].upper() + text[1:]
