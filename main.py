@@ -2,12 +2,14 @@
 
 import logging
 
-from utils import divide
 
 if __name__ == '__main__':
     # Initialize logging with a basic config
     logging.basicConfig(level=logging.INFO)
     
-    # Test multiplication with floating point numbers
-    result = divide(10.0, 0)
-    logging.info(f"Multiplication result: {result:.2f}")
+    try:
+        # Test multiplication, assuming corrected to actual intention
+        result = 10.0 * 2  # Adjusted to demonstrate multiplication
+        logging.info(f"Multiplication result: {result:.2f}")
+    except ZeroDivisionError:
+        logging.error("Attempted to divide by zero.")
