@@ -19,8 +19,8 @@ def concatenate_strings(*args: str) -> str:
 
 def capitalize_first_letter(text: str) -> str:
     """
-    Capitalize the first letter of a string.
+    Capitalize the first letter of a string, ensuring it handles None and empty input gracefully.
     """
     if not text:
-        return text
+        return ''
     return text[0].upper() + text[1:]
