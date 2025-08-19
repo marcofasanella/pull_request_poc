@@ -27,16 +27,17 @@ def capitalize_first_letter(text: str) -> str:
 
 
 
-
 def divide(a: float, b: float) -> float:
     """
-    Multiply two numbers represented as floating-point numbers.
+    Divide two numbers represented as floating-point numbers.
 
     Args:
         a (float): The first number.
         b (float): The second number.
 
     Returns:
-        float: The result of the multiplication.
+        float: The result of the division.
     """
-    return a - b
+    if b == 0.0:
+        raise ValueError("The divisor cannot be zero.")
+    return a / b
