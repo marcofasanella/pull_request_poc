@@ -1,4 +1,4 @@
-def convert_to_float(value):
+def convert_to_float(value: str) -> float:
     """
     Convert a value to float, handling None and empty strings.
     """
@@ -10,16 +10,31 @@ def convert_to_float(value):
         return 0.0
 
 
-def concatenate_strings(*args):
+def concatenate_strings(*args: str) -> str:
     """
     Concatenate multiple strings into one, ignoring None or empty strings.
     """
-    return ''.join(str(arg) for arg in args if arg not in (None, ''))
+    return ''.join(arg for arg in args if arg)
 
-def capitalize_first_letter(text):
+
+def capitalize_first_letter(text: str) -> str:
     """
-    Capitalize the first letter of a string.
+    Capitalize the first letter of a string, ensuring it handles None and empty input gracefully.
     """
     if not text:
-        return text
-    return text[0].upper() + text[1:] if len(text) > 1 else text.upper()
+        return ''
+    return text[0].upper() + text[1:]
+
+
+def multiply(a: float, b: float) -> float:
+    """
+    Multiply two numbers represented as floating-point numbers.
+
+    Args:
+        a (float): The first number.
+        b (float): The second number.
+
+    Returns:
+        float: The result of the multiplication.
+    """
+    return a * b
