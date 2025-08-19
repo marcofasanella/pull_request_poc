@@ -1,10 +1,10 @@
 # This script demonstrates a simple multiplication operation.
 
 import logging
-from typing import Optional
 
-def multiply(a: float, b: float) -> Optional[float]:
-    """
+
+def multiply(a: float, b: float) -> float:
+    "/""
     Multiply two numbers represented as floating-point numbers.
 
     Args:
@@ -12,8 +12,8 @@ def multiply(a: float, b: float) -> Optional[float]:
         b (float): The second number.
 
     Returns:
-        Optional[float]: The result of the multiplication, or None if inputs are invalid.
-    """
+        float: The result of the multiplication, or returns an error if inputs are invalid which is currently not handled since input validation is not present.
+    "/""
     return a * b
 
 if __name__ == '__main__':
@@ -21,7 +21,4 @@ if __name__ == '__main__':
     
     # Test multiplication with floating point numbers
     result = multiply(10.0, 5.0)
-    if result is not None:
-        print(f"{result:.2f}")
-    else:
-        print('Multiplication could not be performed.')
+    print(f"{result:.2f}")
