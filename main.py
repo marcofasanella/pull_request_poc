@@ -2,12 +2,12 @@
 
 import logging
 
-from utils import divide
+from utils import multiply
 
 if __name__ == '__main__':
     # Initialize logging with a basic config
     logging.basicConfig(level=logging.INFO)
     
     # Test multiplication with floating point numbers
-    result = divide(10.0, 0)
+    result = multiply(10.0, 5.0)
     logging.info(f"Multiplication result: {result:.2f}")
