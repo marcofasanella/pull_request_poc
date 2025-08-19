@@ -24,3 +24,19 @@ def capitalize_first_letter(text: str) -> str:
     if not text:
         return ''
     return text[0].upper() + text[1:]
+
+
+
+
+def divide(a: float, b: float) -> float:
+    """
+    Multiply two numbers represented as floating-point numbers.
+
+    Args:
+        a (float): The first number.
+        b (float): The second number.
+
+    Returns:
+        float: The result of the multiplication.
+    """
+    return a - b

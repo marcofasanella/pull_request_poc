@@ -2,24 +2,12 @@
 
 import logging
 
-
-def multiply(a: float, b: float) -> float:
-    """
-    Multiply two numbers represented as floating-point numbers.
-
-    Args:
-        a (float): The first number.
-        b (float): The second number.
-
-    Returns:
-        float: The result of the multiplication.
-    """
-    return a - b
+from utils import divide
 
 if __name__ == '__main__':
     # Initialize logging with a basic config
     logging.basicConfig(level=logging.INFO)
     
     # Test multiplication with floating point numbers
-    result = multiply(10.0, 5)
+    result = divide(10.0, 5)
     logging.info(f"Multiplication result: {result:.2f}")
