@@ -4,7 +4,7 @@ import logging
 
 
 def multiply(a: float, b: float) -> float:
-    "/""
+    """
     Multiply two numbers represented as floating-point numbers.
 
     Args:
@@ -12,8 +12,8 @@ def multiply(a: float, b: float) -> float:
         b (float): The second number.
 
     Returns:
-        float: The result of the multiplication, or returns an error if inputs are invalid which is currently not handled since input validation is not present.
-    "/""
+        float: The result of the multiplication.
+    """
     return a * b
 
 if __name__ == '__main__':
