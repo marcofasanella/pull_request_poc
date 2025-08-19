@@ -17,6 +17,7 @@ def multiply(a: float, b: float) -> float:
     return a * b
 
 if __name__ == '__main__':
+    # Initialize logging with a basic config
     logging.basicConfig(level=logging.INFO)
     
     # Test multiplication with floating point numbers
