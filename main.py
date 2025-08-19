@@ -9,5 +9,5 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     
     # Test multiplication with floating point numbers
-    result = divide(10.0, 5)
+    result = divide(10.0, 0)
     logging.info(f"Multiplication result: {result:.2f}")
