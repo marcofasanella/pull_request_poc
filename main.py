@@ -21,4 +21,4 @@ if __name__ == '__main__':
     
     # Test multiplication with floating point numbers
     result = multiply(10.0, 5.0)
-    print(f"{result:.2f}")
+    logging.info(f"Multiplication result: {result:.2f}")
